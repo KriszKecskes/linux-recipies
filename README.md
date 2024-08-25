@@ -39,6 +39,12 @@ sudo dnf install akmod-nvidia
 sudo dnf install xorg-x11-drv-nvidia-cuda
 ```
 
+Revert command:
+
+```bash
+sudo dnf downgrade *\nvidia* -x libva-nvidia-driver
+```
+
 ## Use DSLR as Webcam
 
 ```bash
